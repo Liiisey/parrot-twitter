@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "avatar": "CharacterJillPill.png",
+        "avatar": "CharacterJillPill_sm.png",
         "profilename": "Jill Pill",
         "username": "jillphilipowicz",
         "certified": true,
@@ -17,6 +17,22 @@
     },
     {
         "id": 3,
+        "avatar": "CharacterVincentAdultman_sm.png",
+        "profilename": "Vincent",
+        "username": "vincentadultman",
+        "certified": true,
+        "company": false
+    },
+    {
+        "id": 4,
+        "avatar": "CharacterEddie_sm.png",
+        "profilename": "Eddie",
+        "username": "eddie",
+        "certified": true,
+        "company": false
+    },
+    {
+        "id": 5,
         "avatar": null,
         "profilename": "Erica",
         "username": "erica",

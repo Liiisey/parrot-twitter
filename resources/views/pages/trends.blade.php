@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-layout')
 
 @section('trends-content')
     <div class="container second-width">

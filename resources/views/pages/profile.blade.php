@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-layout')
 
 @section('profile-content')
     <div class="container second-width">

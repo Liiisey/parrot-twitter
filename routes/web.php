@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\pages\AboutController;
 use App\Http\Controllers\pages\ExploreController;
 use App\Http\Controllers\pages\HomeController;
 use App\Http\Controllers\pages\ProfileController;
@@ -25,6 +26,8 @@ Route::get('/trends', [ TrendsController::class, 'index'])->name('trends');
 Route::get('/explore', [ ExploreController::class, 'index'])->name('explore');
 
 Route::get('/profile', [ ProfileController::class, 'index'])->name('profile');
+
+Route::get('/about', [ AboutController::class, 'index'])->name('about');
 
 //create new squawk
 //view squawk details

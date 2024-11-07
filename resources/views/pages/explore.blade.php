@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-layout')
 
 @section('explore-content')
     <div class="container second-width">

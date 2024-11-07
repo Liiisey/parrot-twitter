@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-layout')
 
 @section('home-content')
     <div class="container second-width">
@@ -9,6 +9,7 @@
                         <img class="rounded-circle" width="40" src="{{ asset('images/fake-avatars/02.png') }}" alt="user avatar"/>
                     </div>
                     <div class="follow-name width-full">
+                        <label for="homeSquawkContent"></label>
                         <textarea id="homeSquawkContent" class="form-control" rows="2" placeholder="What's up ?"></textarea>
                     </div>
                 </div>
@@ -20,9 +21,9 @@
                         <i data-feather="smile"></i>
                     </div>
                     <div class="col-9 d-flex justify-content-end">
-                        <label for="squawkContent" class="numb-chara">
+                        <span class="numb-chara">
                             <span id="numberOfCharacter">280</span>/280
-                        </label>
+                        </span>
                         <a href="#" class="btn btn-dark rounded-pill custom-w-create-2">Squawk</a>
                     </div>
                 </div>
