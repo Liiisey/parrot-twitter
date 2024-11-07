@@ -1,0 +1,171 @@
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+body {
+    font-family: 'Nunito', sans serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.color-line {
+    height: 12px;
+    background-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+}
+
+//Content
+.first-column {
+    //position: sticky;
+    //background-color: yellow;
+    padding-left: 4rem;
+    height: 350px;
+}
+.right-card {
+    min-height: 350px;
+}
+.reverse-logo {
+    transform: scaleX(-1);
+}
+
+.second-column {
+    //background-color: green;
+}
+.scrollable-column {
+    height: 100vh; //calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.third-column {
+    //position: sticky;
+    //background-color: blue;
+    padding-right: 3rem;
+}
+.left-card {
+    min-height: 550px;
+    margin-bottom: 0.5rem;
+}
+
+.main-width {
+    width: 95%;
+}
+.second-width {
+    width: 90%;
+}
+.text-small {
+    font-size: 15px;
+}
+.resize-icon {
+    width: 16px;
+    height: 16px;
+}
+.resize-certif-icon {
+    width: 15px;
+    height: 15px;
+}
+.margin-r-1 {
+    margin-right: 1rem;
+}
+.hashtag-list:not(:first-child) {
+    padding-left: 0.5rem;
+}
+.hashtag-list-sm:not(:first-child) {
+    padding-left: 0.5rem;
+}
+
+//Modal
+.custom-w-create {
+    width: 40%;
+}
+.custom-w-create-2, .custom-w-close {
+    min-width: 20%;
+}
+.btn-outline-dark:hover {
+    color: #212529;
+    background-color: #fff;
+}
+
+
+//Footer
+.footer-color-background {
+    background-image: linear-gradient(to left, #c6ffdd, #fbd786, #f7797d);
+}
+
+
+
+@media (max-width: 768px) {
+    .first-column {
+        position: sticky;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 2rem;
+    }
+    .second-column {
+        margin: 0;
+        width: 100%;
+    }
+    .create-squawk-modal, .third-column {
+        display: none;
+        /*position: sticky;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;*/
+    }
+    .main-width, .second-width {
+        width: 100%;
+    }
+    .custom-w-create-2 {
+        width: 100%;
+    }
+}
+
+.numb-chara {
+    margin-right: 1rem;
+    padding-top: 6px;
+}
+.home-squawk {
+    padding-left: 60px;
+}
+.follow-row {
+    display: flex;
+    flex-direction: row;
+}
+.follow-img {
+    justify-content: center;
+    margin-right: 8px;
+}
+.follow-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.width-full {
+    width: 100%
+}
+.custom-li {
+    padding: 12px 16px;
+}
+.follow-btn-width {
+    min-width: 78px;
+}
+
+.weight-bold {
+    font-size: 19px;
+    font-weight: bold;
+}
+.sm-weight-bold {
+    font-weight: bold;
+}
+
+.action-icon {
+    margin-right: 0.5rem;
+}
