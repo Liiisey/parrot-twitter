@@ -1,42 +1,40 @@
-<div class="card pb-3 w-100 right-card">
-    <div class="container">
-        <div class="container row">
-            <div class="d-flex flex-column align-items-center justify-content-center px-3 pt-2 text-white">
-                <a href="/" class="pb-3">
-                    <img class="reverse-logo" src="{{ asset('images/squawker-logo.png') }}" width="80"
-                         alt="Squawky the parrot"/>
+<div class="card pb-3 mb-4 right-card">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="reverse-logo" src="{{ asset('images/squawker-logo.png') }}" width="50" alt="Squawky the parrot"/>
+        </a>
+
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/home" @class(["nav-link", str_contains(URL::full(), "/home") ? "active" : "link-body-emphasis" ])>
+                    <i class="bi pe-none me-2" data-feather="home"></i>
+                    Home
                 </a>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center w-75" id="menu">
-                    <li class="nav-item">
-                        <a href="/home" class="nav-link align-middle px-0">
-                            <i data-feather="home"></i>
-                            <span class="ms-1 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/trends" class="nav-link align-middle px-0">
-                            <i data-feather="star"></i>
-                            <span class="ms-1 d-none d-sm-inline">Trends</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/explore" class="nav-link align-middle px-0">
-                            <i data-feather="hash"></i>
-                            <span class="ms-1 d-none d-sm-inline">Explore</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/profile" class="nav-link align-middle px-0">
-                            <i data-feather="user" class="fs-4 bi-house"></i>
-                            <span class="ms-1 d-none d-sm-inline">Profile</span>
-                        </a>
-                    </li>
-                </ul>
+            </li>
+            <li>
+                <a href="/trends" @class(["nav-link", str_contains(URL::full(), "/trends") ? "active" : "link-body-emphasis" ])>
+                    <i class="bi pe-none me-2" data-feather="star"></i>
+                    Trends
+                </a>
+            </li>
+            <li>
+                <a href="/explore" @class(["nav-link", str_contains(URL::full(), "/explore") ? "active" : "link-body-emphasis" ])>
+                    <i class="bi pe-none me-2" data-feather="hash"></i>
+                    Explore
+                </a>
+            </li>
+            <li>
+                <a href="/profile" @class(["nav-link", str_contains(URL::full(), "/profile") ? "active" : "link-body-emphasis" ])>
+                    <i class="bi pe-none me-2" data-feather="user"></i>
+                    Profile
+                </a>
+            </li>
+        </ul>
+        <br>
 
-            </div>
-        </div>
-
-        <div class="create-squawk-modal">
+        <div class="create-squawk-modal mt-2">
             @include('layouts.create-squawk-modal')
         </div>
     </div>

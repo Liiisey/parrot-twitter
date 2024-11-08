@@ -24,14 +24,12 @@ body {
 
 //Content
 .first-column {
-    //position: sticky;
     //background-color: yellow;
+    top: 10px;
     padding-left: 4rem;
     height: 350px;
 }
-.right-card {
-    min-height: 350px;
-}
+
 .reverse-logo {
     transform: scaleX(-1);
 }
@@ -45,8 +43,9 @@ body {
 }
 
 .third-column {
-    //position: sticky;
     //background-color: blue;
+    //position: sticky;
+    top: 10px;
     padding-right: 3rem;
 }
 .left-card {
@@ -170,24 +169,16 @@ body {
     margin-right: 0.5rem;
 }
 
-.footer-about, .footer-version {
-    width: 80px;
-}
 .footer-about {
-    margin-right: 1rem;
     display: flex;
     justify-content: end;
 }
-.footer-version {
-    margin-left: 1rem;
-}
 .footer-divider {
     width: 40px;
-    border-left: 1px solid rgba(33, 37 ,41, 0.50);
-    height: 40px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    cursor: default;
 }
 
 

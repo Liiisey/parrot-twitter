@@ -2,7 +2,7 @@
 
 @section('main-content')
     <!-- navigation -->
-    <div class="first-column pt-3 col-md-2 d-flex align-items-center justify-content-center">
+    <div class="first-column pt-2 col-md-2">
         @include('layouts.nav')
     </div>
     <!-- ./navigation -->
