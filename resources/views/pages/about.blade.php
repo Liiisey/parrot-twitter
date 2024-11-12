@@ -4,14 +4,18 @@
 <div class="second-column scrollable-column pt-3 col-md-8 mx-auto">
     <div class="container">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body back-section">
                 <a href="/home" class="nav-link">
-                    <i data-feather="arrow-left"></i>
-                    back to Squawker 🦜
+                    <div class="back-arrow">
+                        <i data-feather="arrow-left"></i>
+                    </div>
                 </a>
+                <div class="back-arrow-text">
+                    back to Squawker 🦜
+                </div>
+            </div>
 
-                <hr class="hr" />
-
+            <div class="card-body">
                 <div class="container">
                     <h5 class="card-title">Welcome to Squawker, an another twitter clone</h5>
                     <h6 class="card-subtitle mb-2 text-muted">A side project to play with Laravel and blade</h6>
@@ -40,7 +44,6 @@
                         </tr>
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>

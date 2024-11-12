@@ -24,4 +24,10 @@ class DateHelper
         // Si la date de publication est supérieure à un an
         return $created_at->format('j M Y');
     }
+
+    public static function formatFullDate($created_at): string
+    {
+        $created_at = Carbon::parse($created_at);
+        return $created_at->format('j M Y');
+    }
 }

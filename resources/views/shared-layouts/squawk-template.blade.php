@@ -1,21 +1,22 @@
-<!-- loop for adding squawks/tweets from json file -->
 @foreach($squawks as $squawk)
     <div class="card mx-auto main-width mb-3">
         <div class="card-body">
-            <h4 class="card-title">
-                @if($squawk['avatar'])
-                    <img class="rounded-circle" width="30" src="{{ asset('images/fake-avatars/'. $squawk['avatar']) }}" alt="user avatar"/>
-                @else
-                    <img class="rounded-circle" width="40" src="{{ asset('images/placeholder-user.png') }}" alt="user avatar"/>
-                @endif
-                <span class="weight-bold">{{ $squawk['pseudo'] }}</span>
-                <span class="card-subtitle mb-2 text-muted text-small">
-                    {{ "@" . $squawk['username'] }} · {{ \App\Helpers\DateHelper::formatDate($squawk['created_at']) }}
-                </span>
-            </h4>
+            <a href="{{ route('squawk.show', $squawk['id']) }}" class="nav-link">
+                <h4 class="card-title">
+                    @if($squawk['avatar'])
+                        <img class="rounded-circle" width="40" src="{{ asset('images/fake-avatars/'. $squawk['avatar']) }}" alt="user avatar"/>
+                    @else
+                        <img class="rounded-circle" width="40" src="{{ asset('images/placeholder-user.png') }}" alt="user avatar"/>
+                    @endif
+                    <span class="weight-bold">{{ $squawk['userprofile'] }}</span>
+                    <span class="card-subtitle mb-2 text-muted text-small">
+                        {{ "@" . $squawk['username'] }} · {{ \App\Helpers\DateHelper::formatDate($squawk['created_at']) }}
+                    </span>
+                </h4>
+            </a>
             <p class="card-text">{{ $squawk['text'] }}</p>
             @if($squawk['img'])
-                <img class="card-img-top img-fluid" src="{{ asset('images/placeholder-content.png') }}" alt="placeholder image">
+                <img class="card-img-top img-fluid img-border" src="{{ asset('images/placeholder-content.png') }}" alt="placeholder image">
             @endif
             <div class="container row mt-3">
                 <div class="col-2">

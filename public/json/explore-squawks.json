@@ -1,7 +1,7 @@
 [
     {
-        "id": 1,
-        "pseudo": "John Doe",
+        "id": 19,
+        "userprofile": "John Doe",
         "username": "johndoe",
         "avatar": "01.png",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit elementum lacinia. Nunc feugiat augue id dignissim feugiat. Proin fringilla id velit eu mollis. Curabitur a egestas sem tellus. ",
@@ -12,8 +12,8 @@
         "created_at": "2024-10-29T09:29:08.000+00:00"
     },
     {
-        "id": 2,
-        "pseudo": "Jane",
+        "id": 20,
+        "userprofile": "Jane",
         "username": "janedoe",
         "avatar": "02.png",
         "text": "This is a longer card with supporting text below as a natural lead-in to additional content.",
@@ -24,8 +24,8 @@
         "created_at": "2023-10-29T12:12:12.000+00:00"
     },
     {
-        "id": 3,
-        "pseudo": "Princesse Caroline",
+        "id": 21,
+        "userprofile": "Princesse Caroline",
         "username": "pcaroline",
         "avatar": null,
         "text": "This is a longer card with supporting text below as a natural lead-in to additional content.",

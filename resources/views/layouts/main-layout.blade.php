@@ -14,6 +14,7 @@
         @yield('trends-content')
         @yield('explore-content')
         @yield('profile-content')
+        @yield('squawk-details-content')
     </div>
     <!-- .content -->
 

@@ -1,5 +1,5 @@
-<div class="card pb-3 mb-4 right-card">
-    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
+<div class="card pb-2 mb-4 right-card">
+    <div class="d-flex flex-column flex-shrink-0 pt-3 px-3 pb-1 bg-body-tertiary">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <img class="reverse-logo" src="{{ asset('images/squawker-logo.png') }}" width="50" alt="Squawky the parrot"/>
         </a>

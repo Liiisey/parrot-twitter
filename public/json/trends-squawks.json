@@ -1,7 +1,7 @@
 [
     {
-        "id": 1,
-        "pseudo": "Bojack",
+        "id": 16,
+        "userprofile": "Bojack",
         "username": "horsemanobviously",
         "avatar": null,
         "text": "It's me... Bojack... Horseman... Obviously.",
@@ -12,8 +12,8 @@
         "created_at": "2024-10-29T09:29:08.000+00:00"
     },
     {
-        "id": 2,
-        "pseudo": "Diane",
+        "id": 17,
+        "userprofile": "Diane",
         "username": "dianenguyen",
         "avatar": null,
         "text": "This is a longer card with supporting text below as a natural lead-in to additional content.",
@@ -24,8 +24,8 @@
         "created_at": "2023-10-29T12:12:12.000+00:00"
     },
     {
-        "id": 3,
-        "pseudo": "Mr. Peanutbutter",
+        "id": 18,
+        "userprofile": "Mr. Peanutbutter",
         "username": "peanubutter",
         "avatar": null,
         "text": "E Ri cA !!!",

@@ -25,9 +25,8 @@ body {
 //Content
 .first-column {
     //background-color: yellow;
-    top: 10px;
     padding-left: 4rem;
-    height: 350px;
+    height: 360px;
 }
 
 .reverse-logo {
@@ -39,7 +38,8 @@ body {
 }
 .scrollable-column {
     height: 100vh; //calc(100vh - 150px);
-    overflow-y: auto;
+    overflow-y: scroll; //auto
+    //scrollbar-color: #fbd085 #fabe84;
 }
 
 .third-column {
@@ -50,7 +50,9 @@ body {
 }
 .left-card {
     min-height: 550px;
-    margin-bottom: 0.5rem;
+}
+.right-card {
+    //min-height: 260px;
 }
 
 .main-width {
@@ -193,4 +195,44 @@ body {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
+}
+
+
+.squawk-details-card {
+    margin-bottom: 3rem;
+}
+.back-section {
+    display: flex;
+    position: sticky;
+    top: -0.5px;
+    z-index: 3;
+    //height: 53px;
+}
+.back-arrow {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    width: 56px;
+}
+.back-arrow-text {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.trends-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.squawk-text-details {
+    font-size: 17px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.img-border {
+    border: 1px solid #b0b0b1;
+    border-radius: 12px;
 }
