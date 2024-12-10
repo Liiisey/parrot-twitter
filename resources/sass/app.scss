@@ -171,16 +171,10 @@ body {
     margin-right: 0.5rem;
 }
 
-.footer-about {
+.footer-li {
     display: flex;
     justify-content: end;
-}
-.footer-divider {
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    pointer-events: none;
-    cursor: default;
+    align-items: center;
 }
 
 
@@ -235,4 +229,25 @@ body {
 .img-border {
     border: 1px solid #b0b0b1;
     border-radius: 12px;
+}
+.show-hand {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.img-banner {
+    width: 100%;
+    height: 200px;
+}
+.under-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.img-user-profile {
+    margin-top: -100%;
+    //border-radius: 12%;
 }

@@ -16,7 +16,10 @@
 
                 <div class="container row mt-3 home-squawk">
                     <div class="col-3">
-                        <i data-feather="image" class="action-icon"></i>
+                        <label for="file-image" class="action-icon show-hand">
+                            <i data-feather="image"></i>
+                        </label>
+                        <input name="file-image" type="file" id="file-image" accept="image/png, image/jpeg" class="hidden" />
                         <i data-feather="gift" class="action-icon"></i>
                         <i data-feather="smile"></i>
                     </div>

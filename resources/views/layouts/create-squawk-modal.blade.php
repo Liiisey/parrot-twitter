@@ -12,12 +12,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body mb-3">
-                <label for="squawkContent" class="form-label"><span id="numberOfCharacter"></span>/280</label>
+                <label for="squawkContent" class="form-label">
+                    <span id="numberOfCharacter"></span>
+                    /280
+                </label>
                 <textarea id="squawkContent" class="form-control" rows="7" placeholder="Express yourself..."></textarea>
 
                 <div class="container row mt-3">
                     <div class="col-1">
-                        <i data-feather="image"></i>
+                        <label for="file-image" class="show-hand">
+                            <i data-feather="image"></i>
+                        </label>
+                        <input name="file-image" type="file" id="file-image" accept="image/png, image/jpeg" class="hidden" />
                     </div>
                     <div class="col-1">
                         <i data-feather="gift"></i>
@@ -28,7 +34,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#" class="btn btn-dark rounded-pill custom-w-create">Squawk</a>
+                <button type="submit" class="btn btn-dark rounded-pill custom-w-create">Squawk</button>
                 <a href="#" class="btn btn-outline-dark rounded-pill custom-w-close" data-bs-dismiss="modal">Close</a>
             </div>
         </div>
@@ -42,5 +48,6 @@ const $numberOfCharacter = $('#numberOfCharacter');
 $('#squawkContent').on('input', event => {
     let length = event.target.value.length;
     $numberOfCharacter.text(280 - length);
+    console.log($numberOfCharacter.text(280 - length));
 }).trigger('input');
 </script>

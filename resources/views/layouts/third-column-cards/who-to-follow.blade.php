@@ -22,7 +22,7 @@
                                         <i data-feather="check-square" class="resize-certif-icon"></i>
                                     </span>
                                     @else
-                                        <span>
+                                     <span>
                                         <i data-feather="check-circle" class="resize-certif-icon"></i>
                                     </span>
                                     @endif
